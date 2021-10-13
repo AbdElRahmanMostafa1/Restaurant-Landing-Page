@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Define Const classes */
+  .center {
+    text-align: center;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .captalize {
+    text-transform: uppercase;
+  }
+  .section {
+    padding: 5rem;
+  }
+
+  .astoria {
+    color: white;
+    font-size: 2.4rem;
+  }
+
+  .restaurant {
+    font-size: 1.6rem;
+    letter-spacing: 1rem;
+  }
+/* End Define Const classes */
+
+/* Start Custom Styles */
+  /* Start Header PART 1 */ 
+    .header {
+      background-image: url('https://livedemo00.template-help.com/landing_53722/images/parallax01.jpg');
+      height: 100rem;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav {
+      width: 100%;
+      align-self: flex-start;
+      background-color: #333;
+      box-shadow: 0 1rem 5rem #000;
+      opacity: .9;
+      padding: 2rem;
+    }
+
+    .header .form-article {
+      margin-top: 10rem;
+      flex: 1;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .header .form-article h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    .header .form-article form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      margin-top: 5rem;
+      padding: 1rem;
+      background-color: #dfdfdf;
+      opacity: .8;
+      width: 35rem;
+      transition: .3s;
+    }
+
+    .header .form-article form:hover {
+      transition: .3s;
+      opacity: 1;
+    }
+
+    .header .form-article form *:not(:last-child) {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      /* height: 1rem; */
+      transition: .3s;
+      border: .2rem solid transparent;
+    }
+
+    .header .form-article form input:focus {
+      transition: .3s;
+      border: .2rem solid green;
+    }
+
+    .header .form-article button {
+      background-color: green;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      border: .2rem solid transparent;
+    }
+
+    .header .form-article button:hover {
+      background-color: rgb(0, 58, 0);
+      box-shadow: 0 0 1rem skyblue;
+      border-radius: 5rem 0 5rem 0;
+    }
+
+    .header .form-article form > p {
+      font-size: 1.2rem;
+      color: #000;
+    }
+  /* Start Header PART 1 */ 
+
+  /* Start section PART 1 about */ 
+    .about {
+      font-size: 2rem;
+    }
+
+    .about > h1 {
+      margin-bottom: 2rem;
+    }
+
+    .eat-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .single-item {
+      width: 35rem;
+      margin: 2.5rem; 
+      text-align: center;
+      text-justify: distribute;
+    }
+
+    .single-item *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    .icon {
+      width: 7.5rem;
+      height: 7.5rem;
+      background-color: #8a0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border-radius: 50%;
+    }
+
+    .icon svg {
+      color: white;
+      font-size: 5rem;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .text {
+      font-size: 1.4rem;
+    }
+
+  /* End section PART 1 about */
+
+  /* Start section PART 2 black */
+    .black {
+      background-color: #47413C;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .black img {
+      margin-right: 7.5rem;
+    }
+
+    .black > article {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 1;
+    }
+
+    .black > article > h1 {
+      color: white;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .black > article > p {
+      color: white;
+      opacity: .5;
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      text-align: center;
+      line-height: 2.5rem;
+      letter-spacing: .2rem;
+    }
+
+    .benefits > h1 {
+      font-size: 3.5rem;
+      color: #47413C;
+    }
+
+    .benefits .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .benefits .cards-wrapper .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 45rem;
+      margin: 2.5rem 5rem;
+    }
+
+    .benefits .cards-wrapper .card .logo {
+      width: 10.045rem;
+      height: 5rem;
+      background-color: #47413C;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: flex-start;
+      margin-right: 1.5rem;
+    }
+
+    .benefits .cards-wrapper .card .logo svg {
+      color: #ffff;
+      font-size: 2.5rem;
+    }
+
+    .benefits .cards-wrapper .benefits-heading {
+      color: #D2C970;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .benefits .cards-wrapper .benefits-text {
+      font-size: 1.8rem;
+      color: #555;
+    }
+  /* End section PART 2 black */
+
+  /* Start section PART 3 Olivia */
+    .Olivia {
+      background: url('https://livedemo00.template-help.com/landing_53722/images/parallax02.jpg');
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Olivia .olivia-heading {
+      color: white;
+      font-size: 3rem;
+      padding: 5rem 0;
+      text-indent: 20rem;
+      text-align: center;
+    }
+
+    .Olivia picture img {
+      border-radius: 50%;
+    }
+
+    .Olivia picture p {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      color: #D2C970;
+    }
+
+    .Olivia > p {
+      margin-top: 2rem;
+      color: white;
+      font-size: 1.6rem;
+    }
+  /* End section PART 3 Olivia */
+
+  /* Start section PART 4 HOT */
+    .hot {
+      background-color: #F1F1E6;
+      color: #555;
+    }
+
+    .hot > h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+
+    .hot-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hot-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* align-items: center; */
+      width: 45rem;
+      margin: 2.5rem 5rem;
+    }
+    
+    .hot-card > h1 {
+      color: #D2C970;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hot-card > p {
+      font-size: 1.6rem;
+    }
+  /* End section PART 4 HOT */
+
+  /* Start section PART 5 Ensuring */
+  .ensuring {
+    font-size: 2.5rem;
+    color: #555;
+    text-align: center;
+  }
+
+  .ensuring *:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  .ensuring > p {
+    font-size: 1.6rem;
+  }
+
+  .ensuring button {
+    background-color: #D44934;
+    border: .2rem solid transparent;
+    padding: 1rem 10rem ;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 .2rem 1rem black;
+    transition: .3s;
+  }
+
+  .ensuring button:hover {
+    box-shadow: 0 0 0;
+    border-radius: 1rem;
+  }
+  /* End section PART 5 Ensuring */
+
+  /* Start section Footer */
+    footer {
+      background-color: #47413C;
+      text-align: center;
+    }
+
+    footer > p {
+      color: white;
+      opacity: .5;
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+    }
+
+    footer *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  /* End section Footer */
+
+  /* Start Media Query */
+    @media (max-width: 1000px) {
+      html {
+        font-size: 60%;
+      }
+      .black {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+      .black img {
+        margin: 0;
+      }
+      .black > article > h1 {
+        margin-top: 2.5rem;
+      }
+      .black > article > p {
+        margin-top: 3rem;
+      }
+
+      .benefits .cards-wrapper {
+        justify-content: center;
+        width: 100%;
+      }
+      .benefits .cards-wrapper .card, .hot-card {
+        margin: 2.5rem 0;
+      }
+
+      .Olivia .olivia-heading {
+        text-indent: 4rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      html {
+        font-size: 57.5%;
+      }
+      .black img {
+        display: none;
+      }
+    }
+
+    @media (max-width: 400px) {
+      html {
+        font-size: 55%;
+      }
+    }
+  /* End Media Query */
+
+  
+/* End Custom Styles */
